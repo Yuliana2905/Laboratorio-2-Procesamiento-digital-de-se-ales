@@ -59,7 +59,7 @@ mano).
 ## Procedimiento: 
 Definición de señales:
 
-1- Se define la señal del sistema 
+#### 1- Se define la señal del sistema 
 ### Yuliana
 ℎ[𝑛]=  {5,6,0,0,8,6,2}
 ### Adriana 
@@ -73,7 +73,7 @@ Se define la señal de entrada
 ### Camila
 x[n] como la secuencia formada por los dígitos de la cédula del estudiante.
 
-2- Cálculo manual de la convolución:
+#### 2- Cálculo manual de la convolución:
 
 Se aplica la definición discreta de la convolución:
 <img width="288" height="96" alt="image" src="https://github.com/user-attachments/assets/9536a32e-def4-4f1f-8c89-0330b21ccf58" />
@@ -92,4 +92,8 @@ Se realiza la sumatoria para cada valor de
 𝑛
 n, obteniendo la secuencia completa de 
 𝑦[𝑛] y [n].
+
+#### 3-Representación manual de resultados:
+Se grafica la señal de salida  𝑦[𝑛]
+y[n] en función de 𝑛
 
