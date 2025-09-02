@@ -90,7 +90,20 @@ Se realiza la sumatoria para cada valor de
 𝑛
 n, obteniendo la secuencia completa de 
 𝑦[𝑛] y [n].
+### Camila 
+Calculos manuales:
 
+![Imagen de WhatsApp 2025-09-02 a las 18 40 01_9a5d8e14](https://github.com/user-attachments/assets/2a949c63-92a1-44f0-be52-5f0b1da0b0c9)
+
+<img width="681" height="355" alt="image" src="https://github.com/user-attachments/assets/66a162ed-e4b8-4e37-85a8-c5abe7facf01" />
+
+y[n] = { 5, 6, 10, 47, 60, 57, 74, 102, 132, 181, 94, 93, 91, 113, 65, 30 }
+
+y[n]=x[n]∗h[n]
+Se realiza la sumatoria para cada valor de 
+𝑛
+n, obteniendo la secuencia completa de 
+𝑦[𝑛] y [n].
 #### 3-Representación manual de resultados:
 Se grafica la señal de salida  𝑦[𝑛]
 y[n] en función de 𝑛
