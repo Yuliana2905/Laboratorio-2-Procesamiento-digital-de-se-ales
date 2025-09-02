@@ -64,14 +64,12 @@ Definición de señales:
 ℎ[𝑛]=  {5,6,0,0,8,6,2}
 ### Adriana 
 ### Camila
-ℎ[𝑛] como la secuencia formada por los dígitos del código asignado.
-
-Se define la señal de entrada 
+ℎ[𝑛]=  {5,6,0,0,8,5,5}
 ### Yuliana 
-𝑥[𝑛]={1,0,7,3,5,9,9,5,7,0}
+𝑥[𝑛]= {1,0,7,3,5,9,9,5,7,0}
 ### Adriana 
 ### Camila
-x[n] como la secuencia formada por los dígitos de la cédula del estudiante.
+𝑥[𝑛]= {1,0,2,7,2,8,1,6,7,6}
 
 #### 2- Cálculo manual de la convolución:
 
