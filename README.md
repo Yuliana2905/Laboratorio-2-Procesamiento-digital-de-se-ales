@@ -42,6 +42,35 @@ La FFT posibilita obtener el espectro de una señal, analizando su contenido en 
 
 En conjunto, estas herramientas permiten comprender tanto el comportamiento temporal como espectral de las señales, lo que resulta indispensable en aplicaciones de la ingeniería biomédica, el procesamiento de audio, las telecomunicaciones y el control de sistemas digitales.
 
+# Objetivos: 
+·Comprender la convolución como una operación que permite obtener la respuesta de un sistema discreto ante una entrada determinada. 
+·Analizar la correlación como medida de similitud entre dos señales. 
+·Aplicar la Transformada de Fourier como herramienta de análisis en el dominio de la frecuencia.
 
+# Procedimiento y resultados: 
+## PARTE A 
+Teniendo el sistema h[n] = {cada dígito de su código} (ej: h[n] = {5,6,0,0,1,4,6}) y la 
+señal x[n] = {cada dígito de su cédula} (ej: x[n]={1,0,2,1,4,5,4,8,1,9}): 
+1. Encuentre la señal  𝑦[𝑛] resultante de la convolución usando sumatorias (a 
+mano). 
+2. Encuentre la representación gráfica y secuencial (a mano). 
+3. Encuentre la señal 𝑦[𝑛] resultante de la convolución usando Python. 
+4. Encuentre la representación gráfica y secuencial usando Python. 
+## Procedimiento: 
+Definición de señales:
+
+Se define la señal del sistema 
+## Yuliana
+ℎ[𝑛]=  {5,6,0,0,8,6,2}
+## Adriana 
+## Camila
+ℎ[𝑛] como la secuencia formada por los dígitos del código asignado.
+
+Se define la señal de entrada 
+## Yuliana
+## Adriana 
+## Camila
+𝑥[𝑛]={1,0,7,3,5,9,9,5,7,0}
+x[n] como la secuencia formada por los dígitos de la cédula del estudiante.
 
 
