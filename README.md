@@ -84,6 +84,7 @@ Calculos manuales:
 **
 
 <img width="436" height="363" alt="image" src="https://github.com/user-attachments/assets/867c3bdf-4552-4d20-a786-4cd30dc24a56" />
+
 y[n] = { 5, 6, 35, 57, 51, 81, 157, 145, 137, 150, 136, 112, 104, 52, 14, 0 }
 
 y[n]=x[n]∗h[n]
