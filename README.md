@@ -60,7 +60,7 @@ mano).
 Definición de señales:
 
 1- Se define la señal del sistema 
-## Yuliana
+### Yuliana
 ℎ[𝑛]=  {5,6,0,0,8,6,2}
 ## Adriana 
 ## Camila
