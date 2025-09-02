@@ -59,7 +59,7 @@ mano).
 ## Procedimiento: 
 Definición de señales:
 
-Se define la señal del sistema 
+1- Se define la señal del sistema 
 ## Yuliana
 ℎ[𝑛]=  {5,6,0,0,8,6,2}
 ## Adriana 
@@ -67,10 +67,12 @@ Se define la señal del sistema
 ℎ[𝑛] como la secuencia formada por los dígitos del código asignado.
 
 Se define la señal de entrada 
-## Yuliana
+## Yuliana 
+𝑥[𝑛]={1,0,7,3,5,9,9,5,7,0}
 ## Adriana 
 ## Camila
-𝑥[𝑛]={1,0,7,3,5,9,9,5,7,0}
 x[n] como la secuencia formada por los dígitos de la cédula del estudiante.
 
+2- Cálculo manual de la convolución:
 
+Se aplica la definición discreta de la convolución:
