@@ -26,24 +26,9 @@ La convolución permite analizar cómo un sistema modifica una señal, siendo fu
 
 Correlación:
 Es una medida de similitud entre dos señales. La correlación cruzada entre 
-𝑥
-1
-[
-𝑛
-]
-x
-1
+𝑥1[𝑛]x1[n] y 𝑥2[𝑛]x2
 	​
-
-[n] y 
-𝑥
-2
-[
-𝑛
-]
-x
-2
-	​
+<img width="378" height="99" alt="image" src="https://github.com/user-attachments/assets/65dcdc44-90fe-49ac-9d06-dde472760180" />
 
 [n] se define como:
 
