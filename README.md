@@ -62,17 +62,27 @@ Definición de señales:
 1- Se define la señal del sistema 
 ### Yuliana
 ℎ[𝑛]=  {5,6,0,0,8,6,2}
-## Adriana 
-## Camila
+### Adriana 
+### Camila
 ℎ[𝑛] como la secuencia formada por los dígitos del código asignado.
 
 Se define la señal de entrada 
-## Yuliana 
+### Yuliana 
 𝑥[𝑛]={1,0,7,3,5,9,9,5,7,0}
-## Adriana 
-## Camila
+### Adriana 
+### Camila
 x[n] como la secuencia formada por los dígitos de la cédula del estudiante.
 
 2- Cálculo manual de la convolución:
 
 Se aplica la definición discreta de la convolución:
+<img width="288" height="96" alt="image" src="https://github.com/user-attachments/assets/9536a32e-def4-4f1f-8c89-0330b21ccf58" />
+### Yuliana 
+
+<img width="436" height="363" alt="image" src="https://github.com/user-attachments/assets/867c3bdf-4552-4d20-a786-4cd30dc24a56" />
+y[n]=x[n]∗h[n]
+Se realiza la sumatoria para cada valor de 
+𝑛
+n, obteniendo la secuencia completa de 
+𝑦[𝑛] y [n].
+
