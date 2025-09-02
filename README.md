@@ -18,7 +18,10 @@ El procesamiento digital de señales (PDS) se centra en la representación, aná
 
 Convolución:
 Es una operación matemática que describe la salida de un sistema lineal e invariante en el tiempo (LTI) cuando se conoce su respuesta al impulso 
+
 <img width="316" height="85" alt="image" src="https://github.com/user-attachments/assets/daeea36c-7652-43de-91f9-7bb9db13576d" />
+
+
 La convolución permite analizar cómo un sistema modifica una señal, siendo fundamental en el diseño de filtros digitales.
 
 Correlación:
