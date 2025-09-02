@@ -16,7 +16,7 @@ Este laboratorio busca integrar estos tres conceptos aplicados a ejemplos práct
 # Marco teorico:
 El procesamiento digital de señales (PDS) se centra en la representación, análisis y manipulación de señales mediante técnicas matemáticas implementadas en computadoras y sistemas digitales. Entre sus herramientas principales se encuentran la convolución, la correlación y la transformada de Fourier, que permiten comprender y caracterizar el comportamiento de señales y sistemas.
 
-Convolución:
+## Convolución:
 Es una operación matemática que describe la salida de un sistema lineal e invariante en el tiempo (LTI) cuando se conoce su respuesta al impulso 
 
 <img width="316" height="85" alt="image" src="https://github.com/user-attachments/assets/daeea36c-7652-43de-91f9-7bb9db13576d" />
@@ -24,11 +24,24 @@ Es una operación matemática que describe la salida de un sistema lineal e inva
 
 La convolución permite analizar cómo un sistema modifica una señal, siendo fundamental en el diseño de filtros digitales.
 
-Correlación:
+## Correlación:
 Es una medida de similitud entre dos señales. La correlación cruzada entre 
 𝑥1[𝑛]x1[n] y 𝑥2[𝑛]x2
+[n] se define como:
 	​
 <img width="378" height="99" alt="image" src="https://github.com/user-attachments/assets/65dcdc44-90fe-49ac-9d06-dde472760180" />
 
-[n] se define como:
+Cuando una señal se correlaciona consigo misma se obtiene la autocorrelación, útil para detectar periodicidad, redundancias y presencia de ruido. La correlación cruzada se emplea en sincronización de señales y detección de patrones en aplicaciones biomédicas y de telecomunicaciones.
+
+## Transformada de Fourier (TF):
+Permite representar una señal en el dominio de la frecuencia. Su versión discreta se conoce como Transformada Discreta de Fourier (DFT) y se implementa eficientemente mediante la Transformada Rápida de Fourier (FFT). Su definición es:
+
+<img width="295" height="112" alt="image" src="https://github.com/user-attachments/assets/3dd3ed61-9112-468f-b997-b633f3853f8d" />
+
+La FFT posibilita obtener el espectro de una señal, analizando su contenido en frecuencias. Este análisis es esencial para caracterizar señales biológicas, determinar su densidad espectral de potencia y estudiar parámetros como frecuencia media, mediana y desviación estándar.
+
+En conjunto, estas herramientas permiten comprender tanto el comportamiento temporal como espectral de las señales, lo que resulta indispensable en aplicaciones de la ingeniería biomédica, el procesamiento de audio, las telecomunicaciones y el control de sistemas digitales.
+
+
+
 
