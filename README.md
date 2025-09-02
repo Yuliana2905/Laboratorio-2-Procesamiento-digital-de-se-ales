@@ -78,8 +78,14 @@ x[n] como la secuencia formada por los dígitos de la cédula del estudiante.
 Se aplica la definición discreta de la convolución:
 <img width="288" height="96" alt="image" src="https://github.com/user-attachments/assets/9536a32e-def4-4f1f-8c89-0330b21ccf58" />
 ### Yuliana 
+Calculos manuales:
+
+**<img width="916" height="835" alt="image" src="https://github.com/user-attachments/assets/13a401ca-f4b3-447f-90ee-5569e447330f" />
+**
 
 <img width="436" height="363" alt="image" src="https://github.com/user-attachments/assets/867c3bdf-4552-4d20-a786-4cd30dc24a56" />
+y[n] = { 5, 6, 35, 57, 51, 81, 157, 145, 137, 150, 136, 112, 104, 52, 14, 0 }
+
 y[n]=x[n]∗h[n]
 Se realiza la sumatoria para cada valor de 
 𝑛
