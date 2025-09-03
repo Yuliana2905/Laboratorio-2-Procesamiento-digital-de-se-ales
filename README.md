@@ -106,5 +106,9 @@ n, obteniendo la secuencia completa de
 𝑦[𝑛] y [n].
 #### 3-Representación manual de resultados:
 Se grafica la señal de salida  𝑦[𝑛]
+### Yuliana 
+
+### Camila
 y[n] en función de 𝑛
 
+![Imagen de WhatsApp 2025-09-02 a las 20 56 49_7b87bdb6](https://github.com/user-attachments/assets/dd8eaa84-1a1f-4b31-a9ee-2562ea5216a9)
