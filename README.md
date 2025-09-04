@@ -116,6 +116,10 @@ Calculos manuales:
 
 y[n] = { 5, 6, 35, 72, 54, 37, 90, 105, 88, 93, 54, 26, 58, 48, 15, 0 }
 
+<img width="936" height="336" alt="image" src="https://github.com/user-attachments/assets/a2854722-c581-4b06-9f88-45174fd418a3" />
+
+y[n] = { 5, 6, 35, 72, 54, 37, 90, 105, 88, 93, 54, 26, 58, 48, 15, 0 }
+
 y[n]=x[n]∗h[n]
 Se realiza la sumatoria para cada valor de 
 𝑛
