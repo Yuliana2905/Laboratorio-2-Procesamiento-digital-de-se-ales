@@ -114,24 +114,14 @@ Calculos manuales:
 <img width="797" height="804" alt="image" src="https://github.com/user-attachments/assets/90782ae7-610d-4d26-a673-59faee99e62a" />
 
 
-y[n] = { 5, 6, 35, 57, 51, 81, 157, 145, 137, 150, 136, 112, 104, 52, 14, 0 }
+y[n] = { 5, 6, 35, 72, 54, 37, 90, 105, 88, 93, 54, 26, 58, 48, 15, 0 }
 
 y[n]=x[n]∗h[n]
 Se realiza la sumatoria para cada valor de 
 𝑛
 n, obteniendo la secuencia completa de 
 𝑦[𝑛] y [n].
-**
 
-<img width="436" height="363" alt="image" src="https://github.com/user-attachments/assets/867c3bdf-4552-4d20-a786-4cd30dc24a56" />
-
-y[n] = { 5, 6, 35, 57, 51, 81, 157, 145, 137, 150, 136, 112, 104, 52, 14, 0 }
-
-y[n]=x[n]∗h[n]
-Se realiza la sumatoria para cada valor de 
-𝑛
-n, obteniendo la secuencia completa de 
-𝑦[𝑛] y [n].
 #### 3-Representación manual de resultados:
 Se grafica la señal de salida  𝑦[𝑛]
 ### Yuliana 
@@ -140,4 +130,10 @@ Se grafica la señal de salida  𝑦[𝑛]
 y[n] en función de 𝑛
 
 ![Imagen de WhatsApp 2025-09-02 a las 20 56 49_7b87bdb6](https://github.com/user-attachments/assets/dd8eaa84-1a1f-4b31-a9ee-2562ea5216a9)
+
+## Adriana
+y[n] en función de n 
+
+<img width="677" height="598" alt="image" src="https://github.com/user-attachments/assets/1f612919-34d9-4e1a-9206-d489ee4de6fa" />
+
 
