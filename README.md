@@ -140,4 +140,21 @@ y[n] en función de n
 
 <img width="677" height="598" alt="image" src="https://github.com/user-attachments/assets/1f612919-34d9-4e1a-9206-d489ee4de6fa" />
 
+#### 3-Representación por medio de Phyton de resultados:
+Se grafica la señal de salida  𝑦[𝑛]
+### Yuliana
+### Convolucion:
+## Convolucion Yuliana
+''' Phyton
+import numpy as np
+import matplotlib.pyplot as plt
 
+x = np.array([1,0,7,3,5,9,9,5,7,0])
+h = np.array([5,6,0,0,8,6,2])
+y=np.convolve(x,h)
+plt.figure(figsize=(10,4))
+plt.stem(y)
+plt.xlabel ('Eje x')
+plt.ylabel ('Eje y')
+plt.grid(True)
+plt.show() ''' 
