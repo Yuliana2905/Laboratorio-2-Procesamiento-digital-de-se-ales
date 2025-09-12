@@ -165,7 +165,7 @@ plt.title('Convolución de las señales x[n] y h[n]', fontsize=14, fontweight='b
 plt.xlabel('Índice discreto n', fontsize=12)
 plt.ylabel('Amplitud de y[n]', fontsize=12)
 plt.grid(True)
-plt.show()
+plt.show()```
 
 
 <img width="1144" height="515" alt="image" src="https://github.com/user-attachments/assets/7ddbdfa1-9630-4e7b-89d1-f2f9f832f101" />
