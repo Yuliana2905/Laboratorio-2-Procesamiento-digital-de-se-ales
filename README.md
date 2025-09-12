@@ -144,15 +144,13 @@ y[n] en función de n
 Se grafica la señal de salida  𝑦[𝑛]
 ### Yuliana
 ### Convolucion:
-Se definen dos señales discretas:
+Señal de entrada x[n]: [1, 0, 7, 3, 5, 9, 9, 5, 7, 0]
 
-x = [1,0,7,3,5,9,5,7,0]
+Respuesta al impulso h[n]: [5, 6, 0, 0, 8, 6, 2]
 
-h = [5,6,0,0,8,6,2]
+Para ello se utiliza la función np.convolve(x, h), la cual genera una nueva secuencia y[n] que representa el resultado de combinar ambas señales.
 
-Se aplica la convolución discreta con np.convolve(x,h), que filtra la señal x usando h como respuesta al impulso.
-
-Se grafica el resultado en forma de diagrama de tallo (plt.stem(y)), mostrando los valores de la convolución en función del índice de tiempo.
+Posteriormente, con matplotlib, se grafica el resultado en un diagrama de tallo (stem plot), el cual es adecuado para señales discretas.
 #### Convolucion Yuliana
 ```python
 import numpy as np
@@ -168,5 +166,9 @@ plt.xlabel('Índice discreto n', fontsize=12)
 plt.ylabel('Amplitud de y[n]', fontsize=12)
 plt.grid(True)
 plt.show()
+
+
+<img width="1144" height="515" alt="image" src="https://github.com/user-attachments/assets/7ddbdfa1-9630-4e7b-89d1-f2f9f832f101" />
+
 
  
