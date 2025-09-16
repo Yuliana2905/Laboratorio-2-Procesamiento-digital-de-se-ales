@@ -127,10 +127,18 @@ n, obteniendo la secuencia completa de
 𝑦[𝑛] y [n].
 
 #### 3-Representación manual de resultados:
-Se grafica la señal de salida  𝑦[𝑛]
+Grafica de las señal X[𝑛] 
+### Yuliana 
+<img width="1194" height="1600" alt="image" src="https://github.com/user-attachments/assets/a617f38f-88de-4767-af41-18a97d487aa7" />
+
+Grafica la señal de salida  𝑦[𝑛]
+### Yuliana 
+<img width="1558" height="1600" alt="image" src="https://github.com/user-attachments/assets/a5d4b331-bb86-448b-8e72-0e053cd56599" />
+
 ### Yuliana 
 y[n] en función de 𝑛
-<img width="1194" height="1600" alt="image" src="https://github.com/user-attachments/assets/fe351c8a-173e-4026-8bb2-22845c9efa0b" />
+<img width="1299" height="1600" alt="image" src="https://github.com/user-attachments/assets/012a8c94-2bab-4817-b7d8-4d1637a43816" />
+
 
 ### Camila
 y[n] en función de 𝑛
