@@ -129,6 +129,8 @@ n, obteniendo la secuencia completa de
 #### 3-Representación manual de resultados:
 Se grafica la señal de salida  𝑦[𝑛]
 ### Yuliana 
+y[n] en función de 𝑛
+<img width="1194" height="1600" alt="image" src="https://github.com/user-attachments/assets/fe351c8a-173e-4026-8bb2-22845c9efa0b" />
 
 ### Camila
 y[n] en función de 𝑛
