@@ -145,6 +145,14 @@ y[n] en función de 𝑛
 
 ![Imagen de WhatsApp 2025-09-02 a las 20 56 49_7b87bdb6](https://github.com/user-attachments/assets/dd8eaa84-1a1f-4b31-a9ee-2562ea5216a9)
 
+### Camila
+Grafica de las señal X[𝑛] 
+![Imagen de WhatsApp 2025-09-18 a las 16 46 06_9ddfaf9e](https://github.com/user-attachments/assets/caa132e2-ec3f-40b2-af46-aecb4f233573)
+
+### Camila
+Grafica la señal de salida  𝑦[𝑛]
+![Imagen de WhatsApp 2025-09-18 a las 16 46 06_5c03650c](https://github.com/user-attachments/assets/a86c2d9f-169b-4641-852d-155cc2172b9b)
+
 ## Adriana
 y[n] en función de n 
 
