@@ -148,7 +148,18 @@ y[n] en función de 𝑛
 ## Adriana
 y[n] en función de n 
 
-<img width="677" height="598" alt="image" src="https://github.com/user-attachments/assets/1f612919-34d9-4e1a-9206-d489ee4de6fa" />
+<img width="1257" height="800" alt="image" src="https://github.com/user-attachments/assets/70a01cfb-e0cf-445b-afed-429203dff5ff" />
+
+Grafica de la señal h(n) codigo estudiante 
+
+<img width="566" height="799" alt="image" src="https://github.com/user-attachments/assets/7532b672-e133-4d13-957c-04e3dcc27959" />
+
+Grafica de la señal x(n) documento identidad
+
+<img width="1074" height="823" alt="image" src="https://github.com/user-attachments/assets/5736a26d-000a-479e-856b-60c2b3a4f4d5" />
+
+
+
 
 #### 3-Representación por medio de Phyton de resultados:
 Se grafica la señal de salida  𝑦[𝑛]
