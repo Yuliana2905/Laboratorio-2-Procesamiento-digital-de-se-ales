@@ -190,7 +190,35 @@ plt.show()
 '''
 
 
-<img width="1144" height="515" alt="image" src="https://github.com/user-attachments/assets/7ddbdfa1-9630-4e7b-89d1-f2f9f832f101" />
+<img width="1144" height="515" alt="image" src="https://github.com/user-attachments/assets/7ddbdfa1-9630-4e7b-89d1-f2f9f832f101" />  ''' 
 
+### Adriana
+### Convolucion:
+Señal de entrada x[n]: [1, 0, 7, 6, 2, 4, 2, 2, 6, 3]
+
+Respuesta al impulso h[n]: [5, 6, 0, 0, 8, 5, 5]
+
+Para ello se utiliza la función np.convolve(x, h), la cual genera una nueva secuencia y[n] que representa el resultado de combinar ambas señales.
+
+Posteriormente, con matplotlib, se grafica el resultado en un diagrama de tallo (stem plot), el cual es adecuado para señales discretas.
+#### Convolucion Adriana
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([1,0,7,6,2,4,2,2,6,5])
+h = np.array([5,6,0,0,8,5,0])
+y=np.convolve(x,h)
+plt.figure(figsize=(10,4))
+plt.stem(y)
+plt.title('Convolución de las señales x[n] y h[n]', fontsize=14, fontweight='bold')
+plt.xlabel('Índice discreto n', fontsize=12)
+plt.ylabel('Amplitud de y[n]', fontsize=12)
+plt.grid(True)
+plt.show()
+'''
+
+
+<img width="1144" height="515" alt="image" src="https://github.com/user-attachments/assets/7ddbdfa1-9630-4e7b-89d1-f2f9f832f101" />
 
  
