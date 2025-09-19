@@ -180,7 +180,7 @@ Respuesta al impulso h[n]: [5, 6, 0, 0, 8, 6, 2]
 Para ello se utiliza la función np.convolve(x, h), la cual genera una nueva secuencia y[n] que representa el resultado de combinar ambas señales.
 
 Posteriormente, con matplotlib, se grafica el resultado en un diagrama de tallo (stem plot), el cual es adecuado para señales discretas.
-#### Convolucion Yuliana
+#### Convolucion 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -195,11 +195,22 @@ plt.xlabel('Índice discreto n', fontsize=12)
 plt.ylabel('Amplitud de y[n]', fontsize=12)
 plt.grid(True)
 plt.show()
-'''
+```
 
 
-hjjhgjhgf
-
+# Convolucion Yuliana
 <img width="1144" height="515" alt="image" src="https://github.com/user-attachments/assets/7ddbdfa1-9630-4e7b-89d1-f2f9f832f101" />
+
+
+# Convolucion Camila
+<img width="881" height="400" alt="image" src="https://github.com/user-attachments/assets/a7768153-391f-479d-a810-33e514b624da" />
+
+
+# Convolucion Adriana
+e<img width="864" height="390" alt="image" src="https://github.com/user-attachments/assets/7bb6f78a-c66e-48fc-afc5-8d6088c92cac" />
+
+
+
+
 
  
