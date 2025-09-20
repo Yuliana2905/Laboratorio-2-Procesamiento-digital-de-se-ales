@@ -261,7 +261,49 @@ plt.show()
 
 
 # PARTE B
+Para la parte b se definieron las señales pedidas en el informe para Ts= 1.25ms.
+1. encontrar la correlación cruzada entre ambas señales.
+```python
+Ts=1.25e-3
+n=np.arange(0, 9)
+t=n*Ts
 
+x1=np.cos(2*np.pi*100*t)
+x2=np.sin(2*np.pi*100*t)
+
+corr=np.correlate(x1, x2, mode="full")
+lags=np.arange(-len(x1)+1, len(x1))
+
+plt.figure(figsize=(12, 6))
+plt.subplot(3,1,1)
+plt.stem(n,x1,basefmt="k")
+plt.title("Señalx1[n]=cos(2π100nTs)")
+plt.xlabel("n(muestras)")
+plt.ylabel("x1[n]")
+plt.subplot(3,1,2)
+plt.stem(n,x2,basefmt="k")
+plt.title("Señalx2[n]=sin(2π100nTs)")
+plt.xlabel("n(muestras)")
+plt.ylabel("x2[n]")
+plt.subplot(3,1,3)
+plt.stem(lags, corr, basefmt="k")
+plt.title("Correlación cruzada entre x1[n] y x2[n]")
+plt.xlabel("Desplazamiento (lags)")
+plt.ylabel("Correlación")
+
+plt.tight_layout()
+plt.show()
+
+print("x1 =", np.round(x1, 4))
+print("x2 =", np.round(x2, 4))
+print("Correlación cruzada =", np.round(corr, 4))
+```   
+<img width="760" height="364" alt="image" src="https://github.com/user-attachments/assets/b75485b1-4461-4a5e-92af-e9d370e53d6b" />
+2. se encontro la representacion grafica que describia la secuencia resultante 
+
+3. Las correlciones cruzadas son una herramienta muy util para medir la similitud entres dos señales segun su desplazamiento se aplica en situaciones practicas como estamiacion de retardo cuando una señal llega con un restraso a un sistema, la correlacion cruzada permite encontrar el desfase temporal.
+deteccion y coincidencia de patrones en una señal larga como señales electrocardiograficos, localizacion y alineamientos para señales con multicanal o sincronizar grabaciones, medicion de 
+medición de similitud del ruido atenuando el ruido no correlacionado por eso es util en deteccion de señales debiles en ambientes ruidosos 
 # DIAGRAMAS DE FLUJO
 
 ### Diagrama de flujo parte A señal h(n):
