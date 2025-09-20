@@ -278,7 +278,12 @@ plt.show()
 
 <img width="345" height="754" alt="image" src="https://github.com/user-attachments/assets/eebffda4-38cd-4645-8674-0cd9d6daa861" />
 
+### Diagrama de flujo parte B correlacion:
 
+<img width="307" height="715" alt="image" src="https://github.com/user-attachments/assets/01b64000-fda7-48ad-82d1-76ae1e7207fc" />
+
+
+### Diagrama de flujo parte C señales de flujo:
 
 
 
