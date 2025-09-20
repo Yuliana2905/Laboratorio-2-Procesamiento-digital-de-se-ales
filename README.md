@@ -261,6 +261,49 @@ plt.show()
 
 
 # PARTE B
+Se defines las señales para un Ts=1.25ms
+Se encuentra la correlacion cruzada entres las señales dadas por la guia de laboratorio
+Se encuentra la representacion grafico y describio la secuancia resultante
+```python
+Ts=1.25e-3
+n=np.arange(0, 9)
+t=n*Ts
+
+x1=np.cos(2*np.pi*100*t)
+x2=np.sin(2*np.pi*100*t)
+
+corr=np.correlate(x1, x2, mode="full")
+lags=np.arange(-len(x1)+1, len(x1))
+
+plt.figure(figsize=(12, 6))
+plt.subplot(3,1,1)
+plt.stem(n,x1,basefmt="k")
+plt.title("Señalx1[n]=cos(2π100nTs)")
+plt.xlabel("n(muestras)")
+plt.ylabel("x1[n]")
+plt.subplot(3,1,2)
+plt.stem(n,x2,basefmt="k")
+plt.title("Señalx2[n]=sin(2π100nTs)")
+plt.xlabel("n(muestras)")
+plt.ylabel("x2[n]")
+plt.subplot(3,1,3)
+plt.stem(lags, corr, basefmt="k")
+plt.title("Correlación cruzada entre x1[n] y x2[n]")
+plt.xlabel("Desplazamiento (lags)")
+plt.ylabel("Correlación")
+
+plt.tight_layout()
+plt.show()
+
+print("x1 =", np.round(x1, 4))
+print("x2 =", np.round(x2, 4))
+print("Correlación cruzada =", np.round(corr, 4))
+```
+<img width="760" height="372" alt="image" src="https://github.com/user-attachments/assets/0a18f234-5047-46b8-84c5-1e94a17dc461" />
+
+ la correlacion cruzada es una herramienta util para medir la similitud entres dos señales segun un desplazamiento se aplica en multiples situaciones 
+ como estimacion de retardo de una señal en un sismeta retardado aqui la correlacion cruzada estres la señal transmitida y la recibifa permite encontrar desfases temporales otra aplicacion es la deteccion y coincidencia de patrones para encontrar si un patron aparece dentro de una señal larga como un electrocardiograma otra seria la medicion de similitud en precensia de ruido la correlacion resalta componentes comunes entre dos señales entre dos señales y atenua ruido no corrwlacionado por esto es util en la deteccion de señales debiles en ambientes con alto ruido, entre otras aplicaciones.
+ en resumen este sirve para detectar, compara y sincronizar señales en presencia de ruido o desfase.
 
 # DIAGRAMAS DE FLUJO
 
