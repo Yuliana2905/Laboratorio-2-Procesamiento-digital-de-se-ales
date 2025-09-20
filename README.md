@@ -284,6 +284,14 @@ plt.show()
 
 
 ### Diagrama de flujo parte C señales de flujo:
+Diagrama de flujo para capturar la señal generada del osciloscopio 
+
+<img width="345" height="782" alt="image" src="https://github.com/user-attachments/assets/a0c68528-3abc-4b4a-bbab-afede7682e04" />
+
+Diagrama de flujo de la señal
+
+<img width="213" height="705" alt="image" src="https://github.com/user-attachments/assets/58379f63-af0b-4ac8-b831-578e694d51cc" />
+
 
 
 
