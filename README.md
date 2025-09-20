@@ -170,17 +170,67 @@ Grafica de la señal x(n) documento identidad
 
 
 #### 3-Representación por medio de Phyton de resultados:
-Se grafica la señal de salida  𝑦[𝑛]
-### Yuliana
-### Convolucion:
-Señal de entrada x[n]: [1, 0, 7, 3, 5, 9, 9, 5, 7, 0]
+## Grafica h(n)
+Se definió la señal discreta h(n) y se representó mediante la función plt.stem, que permite graficar valores discretos en forma de impulsos. En la gráfica se observa la variación de la amplitud de la señal en función del índice n, añadiendo título y etiquetas a los ejes para una mejor interpretación.
+```python
+x = [0, 1, 2, 3, 4, 5, 6]
+h = [5, 6, 0, 0, 8, 5, 0]
 
-Respuesta al impulso h[n]: [5, 6, 0, 0, 8, 6, 2]
+plt.stem(x,h)
+plt.title('Grafica señal h(n)', fontsize=14, fontweight='bold')
+plt.xlabel('Índice discreto n', fontsize=12)
+plt.ylabel('Amplitud de h[n]', fontsize=12)
+Se grafica la señal de salida  𝑦[𝑛]
+```
+
+## Yuliana
+
+
+<img width="599" height="447" alt="image" src="https://github.com/user-attachments/assets/9101fcf3-5888-4567-9f20-44264a940b3c" />
+
+## Camila
+
+<img width="618" height="456" alt="image" src="https://github.com/user-attachments/assets/a94928b5-2ce9-48f4-9076-024886c9d502" />
+
+
+## Adriana
+
+<img width="593" height="443" alt="image" src="https://github.com/user-attachments/assets/5be7e866-7242-4667-b8e1-b6359e0d32a2" />
+
+## Grafica x(n)
+Se definió la señal discreta x(n) y se representó con la función plt.stem, que grafica los valores como impulsos verticales. La gráfica muestra la amplitud de la señal en función del índice n, con título y etiquetas en los ejes para facilitar su interpretación.
+```python
+x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+h = [1, 0, 7, 6, 2, 4, 2, 2, 6, 3]
+
+plt.stem(x,h)
+plt.title('Grafica señal x(n)', fontsize=14, fontweight='bold')
+plt.xlabel('Índice discreto n', fontsize=12)
+plt.ylabel('Amplitud de x[n]', fontsize=12)
+```
+
+
+## Yuliana
+
+<img width="598" height="447" alt="image" src="https://github.com/user-attachments/assets/a613ac1f-4d31-4426-8c73-370e39e4e5b1" />
+
+
+## Camila
+
+<img width="579" height="454" alt="image" src="https://github.com/user-attachments/assets/f9eddb5c-0ae5-49cb-b6ab-814b3e861377" />
+
+
+## Adriana
+
+<img width="562" height="454" alt="image" src="https://github.com/user-attachments/assets/3f0a023e-0ef1-49b1-b68b-81a031122b0b" />
+
+
+### Convolucion:
 
 Para ello se utiliza la función np.convolve(x, h), la cual genera una nueva secuencia y[n] que representa el resultado de combinar ambas señales.
 
 Posteriormente, con matplotlib, se grafica el resultado en un diagrama de tallo (stem plot), el cual es adecuado para señales discretas.
-#### Convolucion 
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -198,16 +248,42 @@ plt.show()
 ```
 
 
-# Convolucion Yuliana
+## Convolucion Yuliana
 <img width="1144" height="515" alt="image" src="https://github.com/user-attachments/assets/7ddbdfa1-9630-4e7b-89d1-f2f9f832f101" />
 
 
-# Convolucion Camila
+## Convolucion Camila
 <img width="881" height="400" alt="image" src="https://github.com/user-attachments/assets/a7768153-391f-479d-a810-33e514b624da" />
 
 
-# Convolucion Adriana
-e<img width="864" height="390" alt="image" src="https://github.com/user-attachments/assets/7bb6f78a-c66e-48fc-afc5-8d6088c92cac" />
+## Convolucion Adriana
+<img width="864" height="390" alt="image" src="https://github.com/user-attachments/assets/7bb6f78a-c66e-48fc-afc5-8d6088c92cac" />
+
+
+# PARTE B
+
+# DIAGRAMAS DE FLUJO
+
+### Diagrama de flujo parte A señal h(n):
+
+<img width="337" height="674" alt="image" src="https://github.com/user-attachments/assets/ea863fd6-05c0-47c4-b393-b95f4abba0b3" />
+
+### Diagrama de flujo parte A señal x(n):
+
+<img width="305" height="714" alt="image" src="https://github.com/user-attachments/assets/7510bec6-0919-4d6d-8242-abbb597646cf" />
+
+
+
+### Diagrama de flujo parte A convolucion:
+
+<img width="345" height="754" alt="image" src="https://github.com/user-attachments/assets/eebffda4-38cd-4645-8674-0cd9d6daa861" />
+
+
+
+
+
+
+
 
 
 
