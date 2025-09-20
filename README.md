@@ -305,6 +305,135 @@ print("Correlación cruzada =", np.round(corr, 4))
  como estimacion de retardo de una señal en un sismeta retardado aqui la correlacion cruzada estres la señal transmitida y la recibifa permite encontrar desfases temporales otra aplicacion es la deteccion y coincidencia de patrones para encontrar si un patron aparece dentro de una señal larga como un electrocardiograma otra seria la medicion de similitud en precensia de ruido la correlacion resalta componentes comunes entre dos señales entre dos señales y atenua ruido no corrwlacionado por esto es util en la deteccion de señales debiles en ambientes con alto ruido, entre otras aplicaciones.
  en resumen este sirve para detectar, compara y sincronizar señales en presencia de ruido o desfase.
 
+### PARTE C 
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.fft import fft, fftfreq
+from scipy.signal import resample
+
+# =============================
+# Cargar señal desde archivo
+# =============================
+filepath = r"C:\Users\kamir\Downloads\Senal lab 2\Senal lab 2.txt"  # <-- ajusta la ruta
+senal = np.loadtxt(filepath)
+senal = np.asarray(senal).flatten()
+N = len(senal)
+
+# =============================
+# Paso 1: Transformada de Fourier
+# =============================
+# Asumimos frecuencia de muestreo inicial = 1 Hz (si no la dan)
+fs_original = 1.0  
+t = np.arange(N) / fs_original
+
+yf = fft(senal)
+xf = fftfreq(N, 1/fs_original)[:N//2]
+
+# Magnitud del espectro
+magnitude = 2.0/N * np.abs(yf[:N//2])
+
+# Frecuencia máxima significativa
+threshold = 0.01 * np.max(magnitude)  # umbral 1% de la amplitud máxima
+f_max = xf[magnitude > threshold].max()
+f_nyquist = f_max / 2
+
+print(f"Frecuencia máxima significativa: {f_max:.2f} Hz")
+print(f"Frecuencia de Nyquist: {f_nyquist:.2f} Hz")
+
+# =============================
+# Paso 2: Digitalizar con 4 * Nyquist
+# =============================
+fs_digital = 4 * f_nyquist
+num_samples = int(N * (fs_digital / fs_original))
+senal_digital = resample(senal, num_samples)
+t_digital = np.linspace(0, N/fs_original, num_samples)
+
+# =============================
+# Paso 3: Estadísticos
+# =============================
+media = np.mean(senal_digital)
+mediana = np.median(senal_digital)
+desv = np.std(senal_digital)
+valor_max = np.max(senal_digital)
+valor_min = np.min(senal_digital)
+
+print("\n--- Caracterización de la señal ---")
+print(f"Media: {media:.4f}")
+print(f"Mediana: {mediana:.4f}")
+print(f"Desviación estándar: {desv:.4f}")
+print(f"Máximo: {valor_max:.4f}")
+print(f"Mínimo: {valor_min:.4f}")
+
+# =============================
+# Gráficas
+# =============================
+
+# GRAFICA 1: original vs amplificada
+plt.figure(figsize=(10,5))
+plt.plot(t, senal, label='Señal original', color="purple")          # morado
+plt.plot(t, senal_amplificada, label=f'Señal amplificada x{amplify_factor}', 
+         linestyle='--', color="deeppink")                          # rosa fuerte
+plt.xlabel('Muestras')
+plt.ylabel('Amplitud')
+plt.title('Señal original y amplificada')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# GRAFICA 2: original vs desplazada
+plt.figure(figsize=(10,5))
+plt.plot(t, senal, label='Señal original', color="purple")          # morado
+plt.plot(t, senal_desplazada, label=f'Señal desplazada +{offset}', 
+         linestyle='--', color="deeppink")                          # rosa fuerte
+plt.xlabel('Muestras')
+plt.ylabel('Amplitud')
+plt.title('Señal original y desplazada')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# Señal original
+plt.figure(figsize=(10,4))
+plt.plot(t, senal, label="Señal original", color="purple")  # morado
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud")
+plt.title("Señal original")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# Señal digitalizada
+plt.figure(figsize=(10,4))
+plt.plot(t_digital, senal_digital, label=f"Señal digitalizada (fs={fs_digital:.2f} Hz)", color="deeppink")  # rosa fuerte
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud")
+plt.title("Señal digitalizada")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# Espectro en frecuencia
+plt.figure(figsize=(10,4))
+plt.plot(xf, magnitude, color="#800080")  # morado con código hex
+plt.xlabel("Frecuencia [Hz]")
+plt.ylabel("Amplitud")
+plt.title("Espectro de la señal (FFT)")
+plt.grid(True)
+plt.show()
+Señal cargada. Muestras: 10000
+Frecuencia máxima significativa: 0.01 Hz
+Frecuencia de Nyquist: 0.01 Hz
+
+--- Caracterización de la señal ---
+Media: 1.4126
+Mediana: 1.4143
+Desviación estándar: 0.0568
+Máximo: 1.5211
+Mínimo: 1.2801
+```  
+
 # DIAGRAMAS DE FLUJO
 
 ### Diagrama de flujo parte A señal h(n):
