@@ -416,6 +416,22 @@ Desviación estándar:mide la dispersión de los valores respecto a la media.
 Máximo y mínimo:representan los picos de amplitud de la señal.
 Estos indicadores permiten describir cuantitativamente la señal, mostrando su tendencia central, variabilidad y límites de amplitud.
 
+# GRAFICAS DE LA PARTE C
+Señal original
+![Imagen de WhatsApp 2025-09-19 a las 23 06 17_ab22264a](https://github.com/user-attachments/assets/06632cf3-5fe0-4a2d-bbb3-11d18595a925)
+
+Señal original y amplificada
+![Imagen de WhatsApp 2025-09-19 a las 23 05 44_d836f9e6](https://github.com/user-attachments/assets/4e08ab5e-9dfb-4f02-a559-a3dd9661354d)
+
+Señal original y desplazada 
+![Imagen de WhatsApp 2025-09-19 a las 23 06 03_d1f91b32](https://github.com/user-attachments/assets/0ff997f7-6307-402d-8f8e-e8ea30c62f19)
+
+Señal digitalizada
+![Imagen de WhatsApp 2025-09-19 a las 23 06 29_ad595335](https://github.com/user-attachments/assets/58d2e35b-0b9b-48a5-9fe1-c1c443d392df)
+
+Transformada Rápida de Fourier (FFT)
+![Imagen de WhatsApp 2025-09-19 a las 23 06 41_05b30a71](https://github.com/user-attachments/assets/c0a6ea83-3b20-48e5-9e54-7030c03738cf)
+
 # DIAGRAMAS DE FLUJO
 
 ### Diagrama de flujo parte A señal h(n):
