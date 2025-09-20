@@ -313,62 +313,36 @@ import matplotlib.pyplot as plt
 from scipy.fft import fft, fftfreq
 from scipy.signal import resample
 
-# =============================
-# Cargar señal desde archivo
-# =============================
 filepath = r"C:\Users\kamir\Downloads\Senal lab 2\Senal lab 2.txt"  # <-- ajusta la ruta
 senal = np.loadtxt(filepath)
 senal = np.asarray(senal).flatten()
 N = len(senal)
-
-# =============================
-# Paso 1: Transformada de Fourier
-# =============================
 # Asumimos frecuencia de muestreo inicial = 1 Hz (si no la dan)
 fs_original = 1.0  
 t = np.arange(N) / fs_original
-
 yf = fft(senal)
 xf = fftfreq(N, 1/fs_original)[:N//2]
-
-# Magnitud del espectro
 magnitude = 2.0/N * np.abs(yf[:N//2])
-
-# Frecuencia máxima significativa
 threshold = 0.01 * np.max(magnitude)  # umbral 1% de la amplitud máxima
-f_max = xf[magnitude > threshold].max()
-f_nyquist = f_max / 2
-
+f_max=xf[magnitude>threshold].max()
+f_nyquist=f_max/2
 print(f"Frecuencia máxima significativa: {f_max:.2f} Hz")
 print(f"Frecuencia de Nyquist: {f_nyquist:.2f} Hz")
-
-# =============================
-# Paso 2: Digitalizar con 4 * Nyquist
-# =============================
 fs_digital = 4 * f_nyquist
 num_samples = int(N * (fs_digital / fs_original))
 senal_digital = resample(senal, num_samples)
 t_digital = np.linspace(0, N/fs_original, num_samples)
-
-# =============================
-# Paso 3: Estadísticos
-# =============================
 media = np.mean(senal_digital)
 mediana = np.median(senal_digital)
 desv = np.std(senal_digital)
 valor_max = np.max(senal_digital)
 valor_min = np.min(senal_digital)
-
 print("\n--- Caracterización de la señal ---")
 print(f"Media: {media:.4f}")
 print(f"Mediana: {mediana:.4f}")
 print(f"Desviación estándar: {desv:.4f}")
 print(f"Máximo: {valor_max:.4f}")
 print(f"Mínimo: {valor_min:.4f}")
-
-# =============================
-# Gráficas
-# =============================
 
 # GRAFICA 1: original vs amplificada
 plt.figure(figsize=(10,5))
@@ -394,7 +368,6 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# Señal original
 plt.figure(figsize=(10,4))
 plt.plot(t, senal, label="Señal original", color="purple")  # morado
 plt.xlabel("Tiempo [s]")
@@ -404,7 +377,6 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# Señal digitalizada
 plt.figure(figsize=(10,4))
 plt.plot(t_digital, senal_digital, label=f"Señal digitalizada (fs={fs_digital:.2f} Hz)", color="deeppink")  # rosa fuerte
 plt.xlabel("Tiempo [s]")
